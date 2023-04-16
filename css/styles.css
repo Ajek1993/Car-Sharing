@@ -89,7 +89,9 @@ header::before {
 h1, h2, h3,
 .link__buttons,
 .menu,
-.btn_little {
+.btn_little,
+.nav_footer,
+.btn_send  {
     text-transform: uppercase;
 }
 
@@ -209,19 +211,25 @@ h1 {
     align-items: center;
 }
 
-.section_blog {
+.heading_blog {
     margin-top: 91px;
     margin-bottom: 35px;
 }
 
-.section_service {
+.heading_service {
     margin-top: 60px;
     margin-bottom: 75px;
     color: var(--white-color);
 }
 
+.heading_contact{
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+
 .section_service_bgc {
-    margin-top: 100px;
+    margin-top: 110px;
+    padding-bottom: 100px;
     width: 100%;
     background-color: var(--service-footer-background-color);
 }
@@ -287,4 +295,121 @@ h1 {
     margin-top: 15px;
     padding: 10px 29px;
     display: inline-block;
+}
+
+.contact_form {
+    width: 444px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_img {
+    margin-right: 16px;
+    width: 444px;
+    height: 316.5px;
+    align-self: flex-start;
+}
+
+footer {
+    margin-top: 65px;
+    background-color: var(--service-footer-background-color);
+}
+
+.footer_container {
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 39px;
+    width: 1088px;
+}
+
+footer .logo {
+    margin-bottom: 22px;
+    color: var(--white-color);
+    font-size: 25px;
+    font-display: flex;
+    align-items: center;
+}
+
+.logo_img_mini {
+    width: 16.45px;
+    height: 18.95px;
+    margin-right: 7.55px;
+}
+
+.nav_footer {
+    width: 40%;
+    height: 97px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.nav_footer a {
+    margin: 35px 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.nav_footer a:hover {
+    color: var(--red-color);
+}
+
+.footer_menu {
+    display: flex;
+}
+
+.footer_menu p {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+    color: var(--contact-frame-color);
+    align-self: flex-end;
+    position: relative;
+    right: -100px;
+}
+
+.contact_form::placeholder {
+    color: var(--service-contact-text-color);
+}
+
+.input_button {
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    border: 1px solid var(--contact-frame-color);
+    border-radius: 8px;
+}
+
+.btn_send {
+    margin-top: 20px;
+    padding: 11px 52px;
+    width: 142px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--red-color);
+    background-color: var(--white-color);
+    box-shadow: 0px 3px 6px var(--link-shadow-color);
+    border: 1px solid var(--red-color);
+    border-radius: 40px;
+    align-self: flex-end;
+}
+
+.rodo {
+    margin-left: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.rodo_container {
+    display: flex;
 }
